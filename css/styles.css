@@ -600,41 +600,16 @@ img {
     max-height: 80%;
     overflow-y: auto;
     background-color: #fcfcfc;
+    position: relative;
 }
 
 .modal-close-box {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: auto;
-}
-
-.modal-close {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-    border: 1px solid #e7e9fc;
-    border-radius: 100%;
-    background-color: #F4F4FD;
-    transition: background-color 250ms ease-in-out;
+    top: 24px;
+    right: 24px;
 }
 
-.modal-close-svg {
-    fill: var(--main-text-color);
-    transition: fill 250ms ease-in-out;
-}
 
-.modal-close:hover,
-.modal-close:focus {
-    background-color: var(--main-text-color-hover-focus);
-}
-
-.modal-close:hover .modal-close-svg,
-.modal-close:focus .modal-close-svg{
-    fill: var(--main-background-color);
-}
 
 .modal-text {
     display: flex;
@@ -786,4 +761,35 @@ img {
 .modal-btn:hover,
 .modal-btn:focus {
     background-color: var(--main-text-color-hover-focus);
+}
+
+.modal-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #f4f4fd;
+    border: 1px solid #e7e9fc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 250ms ease-in-out;
+}
+
+.modal-close-svg {
+    fill: var(--main-text-color);
+    transition: fill 250ms ease-in-out;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    background-color: var(--main-text-color-hover-focus);
+}
+
+.modal-close:hover .modal-close-svg,
+.modal-close:focus .modal-close-svg{
+    fill: var(--main-background-color);
 }
