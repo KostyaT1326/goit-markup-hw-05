@@ -597,7 +597,13 @@ img {
     border-radius: 4px;
     height: 40px;
     padding-left: 16px;
-    outline: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+    placeholder: #ffffff;
+    background-color: transparent;
     background-color: var(--main-text-color);
 }
 
@@ -617,8 +623,11 @@ img {
     border-radius: 4px;
     padding: 8px 24px;
     width: 165px;
+    min-width: 165px;
     height: 40px;
     gap: 16px;
+    font-weight: 500;
+    line-height: 1.5;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: var(--main-color-icon);
     color: #fff;
@@ -635,6 +644,7 @@ img {
 }
 
 .subscribe-icon {
+    margin-left: 16px;
     fill: #fff;
     /* top: 50%;
     transform: translateY(-50%); */
@@ -653,13 +663,10 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 250ms ease-in-out; /*--Вимкнув для роботи над оверлеєм--*/
+/*--Вимкнув для роботи над оверлеєм--*/
+    /* opacity: 0;
+    pointer-events: none; */
 }
 
 .modal-overlay.active {
@@ -668,6 +675,9 @@ img {
 }
 
 .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     border-radius: 4px;
     padding: 72px 24px 24px 24px;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08);
