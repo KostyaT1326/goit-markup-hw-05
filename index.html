@@ -7,20 +7,13 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
       integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
 
-    <!--Підключення шрифтів-->
+    <!------------------------Підключення шрифтів--------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,12 +25,11 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
-    <!--Підключення стилів-->
+    <!----------------------------Підключення стилів------------------------>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header> -->
+    <!----------------------------HEADER SECTION------------------------>
     <header class="header">
       <div class="container">
         <nav class="header-nav">
@@ -73,7 +65,7 @@
       </div>
     </header>
     <main>
-      <!--HERO SECTION-->
+      <!-- ------------------------MAIN HERO SECTION--------------------->
       <section class="main-hero">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
@@ -82,7 +74,7 @@
           </button>
         </div>
       </section>
-      <!--BENEFITS SECTION-->
+      <!------------------------BENEFITS SECTION--------------------->
       <section class="benefits-section">
         <div class="container">
           <h2 class="visually-hidden">list of benefits</h2>
@@ -138,7 +130,7 @@
           </ul>
         </div>
       </section>
-      <!--OUR TEAM SECTION-->
+      <!-------------------------OUR TEAM SECTION--------------------->
       <section class="our-team-section">
         <div class="container team-container">
           <h2 class="team-title">Our Team</h2>
@@ -378,7 +370,7 @@
           </ul>
         </div>
       </section>
-      <!--OUR PORTFOLIO SECTION-->
+      <!-------------------------PORTFOLIO SECTION--------------------->
       <section class="portfolio">
         <div class="container portfolio-container">
           <h2 class="portfolio-title">Our Portfolio</h2>
@@ -501,7 +493,7 @@
         </div>
       </section>
     </main>
-    <!--FOOTER SECTION-->
+    <!-- ----------------------------FOOTER SECTION------------------------ -->
     <footer class="footer-page">
       <div class="container">
         <div class="footer-logo">
@@ -562,9 +554,30 @@
             </li>
           </ul>
         </div>
+        <!-----------------------------SUBSCRIBE------------------------->
+        <div class="subscribe-container">
+          <p class="subscribe-text">Subscribe</p>
+          <form class="subscribe-form">
+            <label class="subscribe-label">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="user-email"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button class="subscribe-button" type="submit">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    /*-----------------------------MODAL OVERLAY-------------------------*/
+    <!-----------------------------MODAL OVERLAY------------------------->
     <div class="modal-overlay">
       <div class="modal">
         <p class="modal-text">Leave your contacts and we will call you back</p>
@@ -582,7 +595,6 @@
               <use href="./images/icons.svg#icon-avatar"></use>
             </svg>
           </div>
-
           <label class="modal-label" for="your-phone-number">Phone</label>
           <div class="wrapper-input">
             <input
@@ -596,7 +608,6 @@
               <use href="./images/icons.svg#icon-telephone"></use>
             </svg>
           </div>
-
           <label class="modal-label" for="your-email">Email</label>
           <div class="wrapper-input">
             <input
@@ -610,7 +621,6 @@
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
           </div>
-
           <label class="modal-label-message" for="your-comment"
             >Comment
             <textarea
@@ -651,3 +661,4 @@
     </div>
   </body>
 </html>
+<!
