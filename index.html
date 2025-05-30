@@ -505,7 +505,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div>
+        <div class="footer-social">
           <p class="footer-sotial">Social media</p>
           <ul class="footer-social-list">
             <li class="footer-social-icon">
@@ -562,12 +562,13 @@
               <input
                 class="subscribe-input"
                 type="email"
+                id="user-email"
                 name="user-email"
                 placeholder="E-mail"
                 required
               />
             </label>
-            <button class="subscribe-button" type="submit">
+            <button class="subscribe-button" type="button">
               Subscribe
               <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -578,7 +579,7 @@
       </div>
     </footer>
     <!-----------------------------MODAL OVERLAY------------------------->
-    <div class="modal-overlay">
+    <div class="modal-overlay" id="modal">
       <div class="modal">
         <button class="modal-close" type="button">
           <svg class="modal-close-svg" width="8" height="8">
@@ -609,7 +610,8 @@
                 class="modal-label-input"
                 id="your-phone-number"
                 type="tel"
-                name="user-phone"
+                name="tel"
+                autocomplete="tel"
                 required
               />
               <svg class="label-icon" width="18" height="24">
@@ -624,7 +626,8 @@
                 class="modal-label-input"
                 id="your-email"
                 type="email"
-                name="user-email"
+                name="email"
+                autocomplete="email"
                 required
               />
               <svg class="label-icon" width="18" height="24">
@@ -648,6 +651,7 @@
               type="checkbox"
               value="true"
               name="user-privacy"
+              required
             />
             <label class="order-form-policy-lable" for="user-privacy"
               ><span class="order-from-custom-checkbox">
@@ -666,5 +670,6 @@
         </form>
       </div>
     </div>
+    </script>
   </body>
 </html>
