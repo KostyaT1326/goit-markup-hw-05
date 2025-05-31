@@ -490,6 +490,7 @@ img {
 
 /*===========FOOTER SECTION============*/
 
+
 .footer-page {
   background: var(--main-text-color);
   padding: 100px 0;
@@ -576,6 +577,7 @@ img {
 
 .footer-page .container {
   display: flex;
+  justify-content: space-between;
   align-items: baseline;
 }
 
